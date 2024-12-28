@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{cheat sheets}
+\author{Om Raheja}
+\date{December 2024}
+\author{Jonathan He}
+\date{December 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+
+\section*{Quadratic Formula Cheat Sheet}
+
+\subsection*{The Quadratic Formula}
+For any quadratic equation in the form:
+\[
+ax^2 + bx + c = 0
+\]
+The solution is:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+
+\subsection*{Key Components}
+\begin{itemize}
+    \item \(a\): Coefficient of \(x^2\)
+    \item \(b\): Coefficient of \(x\)
+    \item \(c\): Constant term
+\end{itemize}
+
+\subsection*{Steps to Use the Formula}
+\begin{enumerate}
+    \item Identify \(a\), \(b\), and \(c\) from the equation.
+    \item Substitute them into the formula.
+    \item Simplify the discriminant (\(b^2 - 4ac\)) first.
+    \item Solve for \(x\) using both \(+\) and \(-\) in \( \pm \).
+\end{enumerate}
+
+\subsection*{Tips for Success}
+\begin{itemize}
+    \item Factor the equation first if possible (it may save time!).
+    \item Double-check signs when substituting \(a\), \(b\), and \(c\).
+    \item Simplify the square root and fraction as much as possible.
+\end{itemize}
+
+\subsection*{Quick Example}
+Solve: \(2x^2 + 4x - 6 = 0\)
+
+\begin{enumerate}
+    \item Identify: \(a = 2\), \(b = 4\), \(c = -6\)
+    \item Plug into formula:
+    \[
+    x = \frac{-4 \pm \sqrt{4^2 - 4(2)(-6)}}{2(2)}
+    \]
+    \item Simplify:
+    \[
+    x = \frac{-4 \pm \sqrt{16 + 48}}{4} = \frac{-4 \pm \sqrt{64}}{4}
+    \]
+    \item Solve:
+    \[
+    x = \frac{-4 + 8}{4} = 1 \quad \text{or} \quad x = \frac{-4 - 8}{4} = -3
+    \]
+\end{enumerate}
+
+\textbf{Final Answer:} \(x = 1\), \(x = -3\)
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{quadgraphex.png}
+    \caption{Graph of the above quadratic equation}
+\end{figure}
+
+\subsection*{Discriminant (\(b^2 - 4ac\))}
+The discriminant determines the type of solutions:
+\begin{itemize}
+    \item \(\text{Positive:}\) Two distinct real solutions.
+    \item \(\text{Zero:}\) One real solution (a repeated root).
+    \item \(\text{Negative:}\) Two complex (imaginary) solutions.
+\end{itemize}
+
+\subsection*{Interpreting the Results}
+The solutions to the quadratic equation, \(x = 1\) and \(x = -3\), correspond to the \(x\)-intercepts of the graph of \(y = 2x^2 + 4x - 6\). These intercepts represent the points where the parabola crosses the \(x\)-axis. 
+
+The discriminant (\(b^2 - 4ac\)) is a crucial component in determining the nature of the solutions. In this case:
+\[
+b^2 - 4ac = 64
+\]
+Since the discriminant is positive, it confirms that there are two distinct real solutions to the equation. This means the parabola intersects the \(x\)-axis at two different points, as shown in Figure~\ref{fig:quad_graph}. The positive discriminant ensures that the square root term in the quadratic formula is real, allowing for two distinct values of \(x\). These solutions are the roots of the equation and also represent the key points where the graph changes direction. 
+
+
+
+
+
+\end{document}
+
