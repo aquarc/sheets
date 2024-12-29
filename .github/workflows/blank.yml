@@ -27,9 +27,12 @@ jobs:
               uses: teatimeguest/setup-texlive-action@v3.3.4
 
           
-            - name: Compile them all
+            - name: setup texlive
               run: |
                 sudo apt-get install texlive
+
+            - name: Compile them all
+              run: |
                 for file in $(find . -name "*.tex"); do
                   pdflatex -halt-on-error "$file"
                 done
