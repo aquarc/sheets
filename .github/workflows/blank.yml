@@ -25,16 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - name: Setup TeXLive Action
               uses: teatimeguest/setup-texlive-action@v3.3.4
-            - name: Run Latexmk
-              uses: reitermarkus/latexmk@v1.0.4
-              with:
-                # Directory in which to run `latexmk`.
-                directory: # optional
-                # Arguments passed to `latexmk`.
-                args: # optional, default is -cd
+
           
             - name: Compile them all
               run: |
+                sudo apt-get update && sudo apt-get install texlive texlive-publishers texlive-science latexmk 
+                pdflatex -halt-on-error *.tex
                 zip -r logs.zip *.log
 
             - name: Download a Build Artifact
