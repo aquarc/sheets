@@ -19,21 +19,14 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    container:
+      image: texlive/texlive
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - name: Checkout Repository
               uses: actions/checkout@v4
-
-            
-            - name: Setup TeXLive Action
-              uses: teatimeguest/setup-texlive-action@v3.3.4
-
-          
-            - name: setup texlive
-              run: |
-                sudo apt-get install texlive-full
 
             - name: Compile them all
               run: |
