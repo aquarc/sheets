@@ -33,7 +33,7 @@ jobs:
           
             - name: setup texlive
               run: |
-                sudo apt-get install texlive
+                sudo apt-get install texlive-full
 
             - name: Compile them all
               run: |
