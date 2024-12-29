@@ -29,8 +29,10 @@ jobs:
           
             - name: Compile them all
               run: |
-                sudo apt-get update && sudo apt-get install texlive texlive-publishers texlive-science latexmk 
-                pdflatex -halt-on-error *.tex
+                sudo apt-get update && sudo apt-get install texlive-full 
+                for file in $(find . -name "*.tex"); do
+                  pdflatex -halt-on-error "$file"
+                done
                 zip -r logs.zip *.log
 
             - name: Download a Build Artifact
