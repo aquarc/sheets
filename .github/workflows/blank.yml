@@ -33,6 +33,7 @@ jobs:
 
             - name: Compile them all
               run: |
+                ls *.tex
                 for file in $(find . -name "*.tex"); do
                   echo $file
                   pdflatex -halt-on-error "$file"
