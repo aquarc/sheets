@@ -25,12 +25,13 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
             - name: Setup TeXLive Action
               uses: teatimeguest/setup-texlive-action@v3.3.4
-            - name: LaTeX compilation
-  # You may pin to the exact commit or the version.
-  # uses: dante-ev/latex-action@49cf7cb5f79e7b2006dbdffea85e02bec0b6244b
-              uses: dante-ev/latex-action@2021-A
+            - name: Run Latexmk
+              uses: reitermarkus/latexmk@v1.0.4
               with:
-                root_file: "*.tex"
+                # Directory in which to run `latexmk`.
+                directory: # optional
+                # Arguments passed to `latexmk`.
+                args: # optional, default is -cd
           
             - name: Compile them all
               run: |
