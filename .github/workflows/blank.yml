@@ -23,6 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - name: Checkout Repository
+              uses: actions/checkout@v4
+
+            
             - name: Setup TeXLive Action
               uses: teatimeguest/setup-texlive-action@v3.3.4
 
