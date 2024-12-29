@@ -29,11 +29,11 @@ jobs:
           
             - name: Compile them all
               run: |
-                sudo apt-get update && sudo apt-get install texlive-full 
+                sudo apt-get install texlive
                 for file in $(find . -name "*.tex"); do
                   pdflatex -halt-on-error "$file"
                 done
-                zip -r logs.zip . -i *.log
+                zip logs.zip *.log
 
             - name: Download a Build Artifact
               uses: actions/download-artifact@v4.1.8
