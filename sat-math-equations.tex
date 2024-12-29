@@ -31,9 +31,71 @@ A quadratic is a function in the form
 $$
 f(x) = ax^2 + bx + c
 $$
-Where ${a, b, c} \in \mathbb{R}$.
+Where ${\{a, b, c\}} \in \mathbb{R}$.
+
+Or in the vertex form:
+$$
+f(x) = a(x-h)^2 + k
+$$
+Where ${\{a, h, k\}} \in \mathbb{R}$
+
+Or in the roots form:
+$$
+f(x) = a(x-r_1)(x-r_2)
+$$
+Where ${\{a, r_1, r_2\}} \in \mathbb{R}$
+
+\subsection{FOIL}
+FOIL stands for First Outer Inner Last. Meaning, when you have
+$$
+f(x)=(a_1x-r_1)(a_2x-r_2)
+$$
+
+You get:
+$$
+a_1a_2x^2-a_1r_2x-a_2r_1x+r_1r_2 =a_1a_2x^2-(a_1r_1+a_2r_2)x+(r_1r_2)
+$$
 
 \subsection{Quadratic Formula}
+
+\subsubsection{Derivation}
+
+$$
+ax^2+bx+c=0 \Longrightarrow 
+ax^2+bx=-c \Longrightarrow 
+\frac{1}{a}ax^2+\frac{b}{a}x=-\frac{c}{a} 
+\Longrightarrow
+x^2+\frac{b}{a}x=-\frac{c}{a} 
+$$
+Complete the square:
+$$
+x^2+\frac{b}{a}x+\frac{b^2}{4a^2}=-\frac{c}{a} + \frac{b^2}{4a^2} \Longrightarrow
+(x+\frac{b}{2a})^2=-\frac{4ac}{4a^2} + \frac{b^2}{4a^2} \Longrightarrow
+(x+\frac{b}{2a})^2=\frac{b^2-4ac}{4a^2} 
+$$
+$$
+\Longrightarrow
+\sqrt{(x+\frac{b}{2a})^2}=\frac{\pm\sqrt{b^2-4ac}}{2a} \Longrightarrow
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
+
+\subsubsection{Alternatives}
+
+In some scenarios it may be easier to use systems of equations.
+
+Given a quadratic in the form:
+$$
+ax^2+bx+c=0
+$$
+We want to find $r_1$ and $r_2$ such that:
+$$
+r_1+r_2=b \quad r_1r_2=c
+$$
+
+You can easily subsitute around until you get the answer.
+If $a \neq 1$ then it is difficult to use this formula.
+
+% todo: it is possible but how 
 
 \subsection{Discriminant}
 
@@ -46,7 +108,6 @@ You can use the two equations to do it
 \subsubsection{Aquarc Method}
 The fancy X thing
 
-\subsection{FOIL}
 
 \section{Sets}
 
@@ -58,6 +119,7 @@ The fancy X thing
 
 You can't really predict what these will be. For 
 
+\section{Trigonometry}
 
 
 \end{document}
