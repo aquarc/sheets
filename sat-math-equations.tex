@@ -113,6 +113,22 @@ However, if $b^2-4ac < 0$ then the $\sqrt{}$ of it would be a complex number, me
 
 \subsection{Vertex}
 
+The vertex is maximum (or minimum) of a quadratic. \\
+
+\begin{tikzpicture}[domain=-1:3]
+    \draw[very thin,color=gray] (-1.1,-1.1) grid (2.9,3.9);
+    \draw[->] (-1.2,0) -- (3.2,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+    \draw plot (\x,0.5*\x*\x-1) node[right] {$f(x) =\frac{1}{2}x^2-1$};
+\end{tikzpicture}
+\begin{tikzpicture}[domain=-1:3]
+    \draw[very thin,color=gray] (-1.1,-1.1) grid (2.9,3.9);
+    \draw[->] (-1.2,0) -- (3.2,0) node[right] {$x$};
+    \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};
+    \draw plot (\x,-0.5*\x*\x+4) node[right] {$f(x) =-\frac{1}{2}x^2+4$};
+\end{tikzpicture}
+
+You can find the vertex by taking the average of the roots.
 
 \subsection{Factoring}
 You can use the two equations to do it
