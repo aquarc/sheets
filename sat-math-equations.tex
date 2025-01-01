@@ -264,15 +264,112 @@ Since $a$ doesn't have to be $1$, this method scales well with more difficult qu
 
 \section{Sets}
 
+
+On the SAT, you may be given a set visually or in numbers. For this guide, we will use sets in this format:
+
+$$
+\{a_1, a_2, ... a_n\}
+$$
+
 \subsection{Domain and Range}
+
+Domain is the total distance of the inputs. For the above set, the domain could be denoted as $n-1$ or $[1, n]$ because the first element is $a_1$ and the last is $a_n$.
+
+The range is the total distance, which would be $\text{max}(\{a_1, a_2, ... a_n\}) - \text{min}(\{a_1, a_2, ... a_n\})$.
 
 \subsection{Standard Deviation}
 
-\section{Word Problems}
+Standard deviation measures the total difference between the mean and each value in the set. 
 
-You can't really predict what these will be. For 
+$$
+\sigma=\sqrt{\frac{1}{n}\sum_{i=1}^n(x_i-\mu)^2}
+$$
+
+Where $n$ is the length, $x_i$ is each item in the set, and $\mu$ is the mean. \\
+The SAT tests whether you can conceptually understand the deviation or not. So if your data typically is further from the mean, it has a higher standard deviation. Note that spread is unrelated to the range. Don't let outliers in the range confuse you.
+
+Typically, on the SAT they will look like: \\
+
+\begin{tikzpicture}
+    \draw (0,0) -- (4,0);
+
+    \draw (0,-0.25) -- (0,0.25);
+    \draw (0, -0.5) node {$1$};
+
+    \draw (1,-0.25) -- (1,0.25);
+    \draw (1, -0.5) node {$2$};
+
+    \draw (2,-0.25) -- (2,0.25);
+    \draw (2, -0.5) node {$3$};
+
+    \draw (3,-0.25) -- (3,0.25);
+    \draw (3, -0.5) node {$4$};
+
+    \draw (4,-0.25) -- (4,0.25);
+    \draw (4, -0.5) node {$5$};
+
+    \fill (0,0.5) circle (2pt);
+    \fill (0,1) circle (2pt);
+    \fill (2,0.5) circle (2pt);
+    \fill (3,0.5) circle (2pt);
+    \fill (3,1) circle (2pt);
+    \fill (3,1.5) circle (2pt);
+
+    \draw (2,-1) node {Set $A$};
+
+    \draw (5,0) -- (9,0);
+
+    \draw (5,-0.25) -- (5,0.25);
+    \draw (5, -0.5) node {$1$};
+
+    \draw (6,-0.25) -- (6,0.25);
+    \draw (6, -0.5) node {$2$};
+
+    \draw (7,-0.25) -- (7,0.25);
+    \draw (7, -0.5) node {$3$};
+
+    \draw (8,-0.25) -- (8,0.25);
+    \draw (8, -0.5) node {$4$};
+
+    \draw (9,-0.25) -- (9,0.25);
+    \draw (9, -0.5) node {$5$};
+
+    \fill (6,0.5) circle (2pt);
+    \fill (6,1) circle (2pt);
+    \fill (7,0.5) circle (2pt);
+    \fill (8,0.5) circle (2pt);
+    \fill (9,0.5) circle (2pt);
+    \fill (9,1) circle (2pt);
+
+    \draw (7,-1) node {Set $B$};
+\end{tikzpicture}
+
+Set $B$ has the smaller standard deviation.
+
+
+%\section{Word Problems}
+%
+%You can't really predict what these will be. For 
 
 \section{Trigonometry}
+
+\begin{tikzpicture}
+    \draw (0,0) -- (4,0) -- (4,3) -- cycle;
+    \draw (0.5,0.2) node {$\theta$};
+    \draw (2, -0.5) node {adjacent};
+    \draw (1.25, 2) node {hypotenuse};
+    \draw (5, 1.5) node {opposite};
+\end{tikzpicture}
+
+$$
+\sin(\theta) = \frac{\text{opposite}}{\text{hypotenuse}}
+$$
+$$
+\cos(\theta) = \frac{\text{adjacent}}{\text{hypotenuse}}
+$$
+$$
+\tan(\theta) = \frac{\text{opposite}}{\text{adjacent}}
+$$
 
 
 \end{document}
