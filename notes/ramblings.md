@@ -853,3 +853,6 @@ intentionally make them wait before interview --> add to doc
 
 why going to china won't hurt my sat
 sat 11am
+
+## IMPORTANT
+peer to peer accountability --> they still aren't comfortable holding each other accountable yet!! idk how to fix that lol
