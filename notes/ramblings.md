@@ -814,4 +814,42 @@ what communication channel is best?
 prepguru, satsensei, prepquest, goalguide
 - rebrand aquarc? debate topic
 
+# 1-26-2025
 
+- who's interviewing muffadal? kanishka
+- when2meet - should it be deployed or not?
+
+maybe give kanishkaa more social work like interviews because she seems to like it
+outline a formal interview process --> intentionally make them wait before the interview and add it to the doc
+
+WWw
+
+aquarc mini orgs
+cant hqve their own sign up flow --> we effectively own their users
+we make an api to interact with ours
+aquarc.org subdomain only
+maybe ask shrish to do the following
+
+physics
+- [ ] sled velocity up when less surface are
+- [ ] efficient for oval shaped orbit, like an egg
+- [ ] the gravitational pull of jupyter and saturn , sling shot effect 
+
+goal setting questins to consider 
+- [ ] speed
+- [ ] 90/10
+- [ ] is this going to get us the most users?
+- [ ] can we do it fast? how fast
+
+sid
+- [ ] codeabode thing
+- [ ] curric
+- [ ] ci/cd
+- [ ] call hom
+
+bring back grind calls
+
+intentionally make them wait before interview --> add to doc
+
+why going to china won't hurt my sat
+sat 11am
