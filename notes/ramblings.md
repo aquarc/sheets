@@ -856,3 +856,5 @@ sat 11am
 
 ## IMPORTANT
 peer to peer accountability --> they still aren't comfortable holding each other accountable yet!! idk how to fix that lol
+
+i think part of the problem is before we had people like satya - not overqualified but willing to do hard work. now we don't have that. in our recruiting process, emphasize that you don'tneed an extensive resume, just a genuine desire to build something better. lowkey we were better when we were humble
