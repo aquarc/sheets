@@ -858,3 +858,31 @@ sat 11am
 peer to peer accountability --> they still aren't comfortable holding each other accountable yet!! idk how to fix that lol
 
 i think part of the problem is before we had people like satya - not overqualified but willing to do hard work. now we don't have that. in our recruiting process, emphasize that you don'tneed an extensive resume, just a genuine desire to build something better. lowkey we were better when we were humble
+
+# 1-27-2025
+
+- trinabh interested in self startup thingy --> ec finder, research GPT
+- i had to prompt ronith to see if he was interested on blog and he eventually straight up said no, that's progress 🔥
+- ronith's probably gonna be CTO cuz no other options
+
+## Ronith Notes
+doomscrolling, procrastination
+articles, wikipedia, news is the new thing, could try RSS for the lack of endless spiral
+
+robotics season done until 9/25
+
+school, end up relearning
+for math 1.5 hours go to waste, hard for him, can build on om notes
+
+APUSH --> 20 mins, 10 min classwork 10 min homework, can use deepseek. combined wiht LA takes 2 hours outside of school
+
+finish HW at 9 pm then lock in, sleep at 1 wake up at 7, 6 hrs sleep
+
+starting hard, lofi beats bad
+- white noise
+- no pomodoro, flow state
+- wants to change up workspace
+- will try grinding in library
+- push ups, standing desk
+
+he wants challenges like the dashboard
