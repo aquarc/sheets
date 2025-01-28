@@ -886,3 +886,12 @@ starting hard, lofi beats bad
 - push ups, standing desk
 
 he wants challenges like the dashboard
+
+manaswini
+- lock in school
+- weekends ecs
+- 3 limiting tasks at a itme
+- not too many ecs, js applications and aquarc
+- will try probing questions
+- will make meeting agenda stuff
+- aquarc group of directors
