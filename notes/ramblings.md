@@ -895,3 +895,7 @@ manaswini
 - will try probing questions
 - will make meeting agenda stuff
 - aquarc group of directors
+
+# 1-28-2025
+
+huly? gsheets? github?
