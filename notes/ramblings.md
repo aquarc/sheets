@@ -939,4 +939,4 @@ should reading up count as volunteer time
 - who's doing internship newsletter? is it necessary?
 - next steps
 
-- what exactly is the role of people like nikil??
+- people who get removed who want to listen in, what to do about them
