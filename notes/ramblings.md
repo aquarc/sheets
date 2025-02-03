@@ -901,3 +901,42 @@ manaswini
 huly? gsheets? github?
 
 should reading up count as volunteer time
+
+# 1-31-2025
+- maybe synchronous work was the best thing that happened to aquarc. opening up was useful, but only to meet that end
+- discuss the new investment in AI
+- discuss purging people
+    - company bylaw - can get kicked until u show up again
+    - 3 strikes and you're out
+    - we should make a formal document outlining this procedure
+    - were standups actually helpful?
+
+# 2-1-2025
+
+- have the "board" meetings be more frequent
+- use the codeabode approach, build your brand and credibility
+    - one on one tutoring
+    - use THOSE conversations with paid customers to build more free stuff
+    - monetize like that as well
+    - prolly will take forever but it's a good strategy
+    - Q1 goal, $5 in revenue
+
+- in addition to "visual graphs", the linear regression feature is great
+    - just solves equations
+    - you can use element lists to do systems of equations
+    - nikil: math guide and desmos guide
+- english
+    - ; is .
+    - : is em dash
+    - dangling modifiers
+    - parallelism
+
+
+# 2-2-2025
+- have the "board" meetings be more frequent
+- use the codeabode approach, build your brand and credibility
+
+- who's doing internship newsletter? is it necessary?
+- next steps
+
+- what exactly is the role of people like nikil??
