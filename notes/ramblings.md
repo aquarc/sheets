@@ -940,3 +940,8 @@ should reading up count as volunteer time
 - next steps
 
 - people who get removed who want to listen in, what to do about them
+
+# 2-4-2025
+all 2-2 things done
+
+oneprep.org anti competitive behavior
