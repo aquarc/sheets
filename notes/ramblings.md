@@ -945,3 +945,12 @@ should reading up count as volunteer time
 all 2-2 things done
 
 oneprep.org anti competitive behavior
+
+# 2-8-2025
+we can take oneprep's practice tests and make them timed, piracy good
+
+# 2-15-2025
+- geetesh - hackathon??
+- i'm going to start doing more tech stuff
+- move to tech first
+
