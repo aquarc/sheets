@@ -279,6 +279,61 @@ $$
 $$
 % yeah i'm not doing this lol
 
+\section{P Series}
+\textbf{NOT} Power Series. \\ 
+
+A P Series is any series in the form:
+$$
+\sum_{n=0}^{\infty}{\frac{1}{n^p}}
+$$
+We use Integral Test to prove if it is diverging or converging.
+
+\subsection{Harmonic Series}
+
+A Harmonic Series is:
+$$
+\sum_{n=0}^{\infty}{\frac{1}{n}}
+$$
+
+Or a P Series where $p=1$.
+
+\subsection{Proof}
+Where $p=1$ (Harmonic Series)
+
+\begin{align*}
+    \int_{1}^{\infty}{\frac{1}{x}}dx < \sum_{n=1}^{\infty}{\frac{1}{n}} < \int_{1}^{\infty}{\frac{1}{x}}dx + 1
+    \Longrightarrow \int_{1}^{\infty}{\frac{1}{x}}dx = \ln|x|\biggr\rvert^{\infty}_{1} \\
+    \Longrightarrow \lim_{x \to \infty}{\ln x} = \infty
+\end{align*}
+Diverges\\
+
+Where $p\neq 1$
+
+\begin{align*}
+    \int_{1}^{\infty}{\frac{1}{x^p}}dx < \sum_{n=1}^{\infty}{\frac{1}{n^p}} < \int_{1}^{\infty}{\frac{1}{x^p}}dx + 1
+    \longrightarrow \int_{1}^{\infty}{x^{-p}}dx = \frac{x^{-p+1}}{-p+1}\biggr\rvert^{\infty}_{1} \\
+    \longrightarrow \lim_{x \to \infty}{\frac{x^{-p+1}}{-p+1}}
+\end{align*}
+If $p>1$ it converges, $p<1$ (or $p\leq 1$) it diverges.
+
+\subsection{Examples}
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{1}{(2n+3)^2}}
+    \Longrightarrow \int_1^{\infty}{\frac{1}{(2x+3)^2}}dx 
+    \longrightarrow u=2x+3 \quad du=2dx
+    \Longrightarrow \int_3^{\infty}{\frac{1}{2u^3}}du
+\end{align*}
+Convergent
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{n+2}{n+1}}
+    \Longrightarrow \int_1^{\infty}{\frac{x+2}{x+1}}dx=\int_1^{\infty}{(1+\frac{1}{x+1})}dx
+    = (x+ \ln |x+1|)\biggr\rvert^{\infty}_{1}\\
+    = \lim_{x \to \infty}{x+ \ln |x+1|} = \infty
+\end{align*}
+Divergent
+
 \section{Convergent or Divergent}
 
 \subsection{Divergence Test}
@@ -430,28 +485,37 @@ The Right Riemann Sum is $<$ than $f(x)$:
 
 Using a method analogous to the Squeeze Theorem, if the bounds diverge, so does the series, and vice versa.
 
-\section{P Series}
-\textbf{NOT} Power Series. \\ 
+\subsection{Direct Comparison Test}
 
-A P Series is any series in the form:
-$$
-\sum_{n=0}^{\infty}{\frac{1}{n^p}}
-$$
-We use Integral Test to prove if it is diverging or converging.
+The direct comparison test allows for \textbf{no negative terms} in the series.\\
 
-\subsection{Harmonic Series}
+Let $a_n$ and $b_n$ represent an unknown and known sequence, respectively. \\
 
-A Harmonic Series is:
-$$
-\sum_{n=0}^{\infty}{\frac{1}{n}}
-$$
+If $a_n < b_n$ for all $n$ (according to CollegeBoard, however the first few terms are an exception) and $\lim_{n \to \infty}{\sum_i^n{b_i}}=L$
+then $\lim_{n \to \infty}{\sum_i^n{a_i}=L_2}$ \\
 
-Or a P Series where $p=1$.
+If $a_n > b_n$ for all $n$ and $\lim_{n \to \infty}{\sum_i^n{b_i}}=L$
+then $\lim_{n \to \infty}{\sum_i^n{a_i}}$ could equal $L_2$ or $\infty$. \\
+
+If $a_n < b_n$ for all $n$ and $\lim_{n \to \infty}{\sum_i^n{b_i}}=\infty$
+then $\lim_{n \to \infty}{\sum_i^n{a_i}}$ could equal $L_2$ or $\infty$.\\
+
+If $a_n > b_n$ for all $n$ and $\lim_{n \to \infty}{\sum_i^n{b_i}}=\infty$
+then $\lim_{n \to \infty}{\sum_i^n{a_i}}=\infty$.
+
+\subsubsection{Examples}
 
 \begin{align*}
-    \int_{1}^{\infty}{\frac{1}{x}}dx < \sum_{n=1}^{\infty}{\frac{1}{n}} < \int_{1}^{\infty}{\frac{1}{x}}dx + 1
-    \Longrightarrow \int_{1}^{\infty}{\frac{1}{x}}dx = \ln|x|\biggr\rvert^{\infty}_{1}
+    \sum_{n=2}^{\infty}{\frac{1}{n^2+1}}=\frac{1}{5}+\frac{1}{10}+\frac{1}{17}+...\\
+    \sum_{n=2}^{\infty}{\frac{1}{n^2}}=\frac{1}{4}+\frac{1}{9}+\frac{1}{16}+...\\
+    \Longrightarrow \sum_{n=2}^{\infty}{\frac{1}{n^2}} > \sum_{n=2}^{\infty}{\frac{1}{n^2+1}} 
+    \Longrightarrow \sum_{n=2}^{\infty}{\frac{1}{n^2}} = L \therefore \sum_{n=2}^{\infty}{\frac{1}{n^2+1}} = L_2
 \end{align*}
+Convergent
 
-
+\subsection{Limit Comparison Test}
+$$
+\lim_{n \to \infty}{\frac{b_n}{a_n}}
+$$
+For $0<n<\infty$ (if it is 0 or $\infty$ anyway, the previous test would suffice).
 \end{document}
