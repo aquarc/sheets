@@ -954,3 +954,160 @@ we can take oneprep's practice tests and make them timed, piracy good
 - i'm going to start doing more tech stuff
 - move to tech first
 
+# 2-22-2025
+bias to the words in cotnext thing
+how much should it be? read about interweaving
+
+# 2-23-2025
+
+hi
+
+i have a few questions i need to ask
+
+aquarc is designing an algorithm
+
+and ur math minded so i wanted to ask for ur help
+
+basically, we want there to be a weight for each category:
+Words In Context (Easy): 0.25
+Words In Context (Hard): 0.25
+Linear Equations (Easy): 0.25
+Linear Equations (Hard): 0.25
+
+and each time a person gets a question wrong from a certain category, the weight will change for that category and all others respectively
+
+so i thought there should be two functions to decide how much the weight should change by. for increasing, it should be the upper half of a logistic function like sigmoid because it has an asymptote and we can make it stop arond 0.10 (or some other fixed value, idk i js camse up with that)
+
+ik for the other ones u can just evenly distribute the negative weight change
+
+but how much should that weight change by initially? what should that upper asymptote be? what should the weight change look like if the question is right? what if they get it right and then wrong?
+
+idk how to answer these questions and i'm looking for a direction
+14 min
+
+- should a question come up at all if a user is consistently getting them right?
+    - do you practice SAT question categories even if they are consistently right? and how frequently?
+- should you practice other questions if you're getting one wrong? how frequently?
+- what is smoothing if they get it right and then wrong? how would that look?
+- with how much increased frequency should a quesiton come up if they randomly get that category wrong?
+- should the weight be higher for hard questions?
+
+so to summarize, the end goal from the user’s perspective is that they’re more likely to receive questions in categories for which they answer incorrectly?
+[
+5:40 PM
+]
+throwie72
+:
+precisely
+[
+5:40 PM
+]
+throwie72
+:
+and if they get the question right then it shows up less
+[
+5:50 PM
+]
+ScalarField
+:
+The simplest system that I can think of that never completely eliminates a question type is this:
+If the user gets a question in some category right, decrease its weight to 3/4 of what it used to be and re-distribute that loss to the other categories. If they get a question wrong, increase its weight to 4/3 of what it used to be and detract from all the other categories equally, to exactly undo what happens if you got it wrong just now. The choice of 3/4 specifically could be adjusted for balance as needed.
+[
+5:51 PM
+]
+throwie72
+:
+that would make sense but shouldn't there be an upper asymptote
+[
+5:51 PM
+]
+throwie72
+:
+actually i'm not sure
+[
+5:51 PM
+]
+throwie72
+:
+i believe interweaving is an effective learning method so there should be an upper bound
+[
+5:52 PM
+]
+ScalarField
+:
+Upper asymptote for what quantity
+[
+5:53 PM
+]
+throwie72
+:
+like say someone just sucks at geometry hard questions completely, they should still get other types of questions because geometry isn't the only thing on the test and we should keep checking for other problems the user has answering other questions
+[
+5:54 PM
+]
+throwie72
+:
+again i'm not an educator so i'm not sure
+
+so if we increase 1 weight do we also subtract from the other weights
+Ahora
+
+yeah
+
+but that's like a fixed amount
+
+if we increase by 0.005 then we divide and subtract across the others
+
+# 3-12-2025
+
+basically we need to get feedback and ask ourselves what we really use to get features done going forward
+
+stuff like focused quizzes is useless for example unless the UI is somehow cleaner but then we gotta adjust the main UI anyway
+
+we gotta figure out how the diagnstic test would work too
+
+i think the fact that we are thinking about all these things now is great because it goes to show how much more finished we are than when we started
+18 min
+
+- have a question help interface where nikil helps out ig
+- time per question?
+
+i feel like u gotta design the features first and layout later u might not need a whole dashboard just a little sidebar to piggyback on the tool idk
+
+3. mimick bluebook a bit more ig * om
+
+- new selection UI with less collapsibles and shit
+    - unselect section
+    - All choice
+- timer stopwatch pomodoro mode (wait on ronith), stop when answer clicked
+- shuffle button
+- adaptive button (use the algorithm u designed)
+- mark for review
+
+- additional info left right (?)
+- NAH: unselect if you select an answer
+- NAH: move timer down there cuz peole don't know it is a button (?)
+- NAH: select question choice (mitigated by the "sesion" feature ig)
+4. GPT wrapper (fr, it'll help people decipher what exactly is wrong for now?)
+5. let's outline a lean canvas during the meeting
+6. dictionary and streaks??
+7. color scheme (pastel colors)
+- consistent button theme
+
+# 3-15-2025
+notice the stylistically interesting questions
+and we should have an import score report functionality
+
+# 3-19-2025
+avg time per question metric under the stopwatch
+
+# 3-21-2025
+ask sadok if we need the compliance
+
+# 3-22-2025
+Design for Everyday things, Don Normal
+Don't make me think, i don't remember the author
+
+user conventions
+user patterns
+intense focus

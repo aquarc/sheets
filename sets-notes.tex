@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{geometry}
+\usepackage[normalem]{ulem}
 
 \geometry{letterpaper, portrait, margin=0.5in}
 \pagestyle{fancy}
@@ -38,7 +39,7 @@ Geometric Series are a special type of Power Series that can be rewritten in the
 
 $$
 f(x)=\frac{a_1}{1-r}=\sum_{n=0}^{\infty}{
-    a_1*r^n
+    a_1\cdot r^n
 }
 $$
 
@@ -66,15 +67,15 @@ To find the interval of convergence, just remember that $|r|< 1$
 \subsection{Examples}
 $$
 f(x)=\frac{1}{2-x}, c=0 
-\Longrightarrow f(x)=\frac{1}{2}*\frac{1}{1-\frac{x}{2}}
-\Longrightarrow f(x)=\sum_{n=0}^{\infty}{\frac{1}{2}*(\frac{x}{2})^n}
+\Longrightarrow f(x)=\frac{1}{2}\cdot \frac{1}{1-\frac{x}{2}}
+\Longrightarrow f(x)=\sum_{n=0}^{\infty}{\frac{1}{2}\cdot \biggr(\frac{x}{2}\biggr)^n}
 $$
 $$
-\Longrightarrow f(x)=\sum_{n=0}^{\infty}{(\frac{1}{2})^{n+1}x^n}
+\Longrightarrow f(x)=\sum_{n=0}^{\infty}{\biggr(\frac{1}{2}\biggr)^{n+1}x^n}
 $$
 $$
 |r|<1 
-\Longrightarrow |\frac{x}{2}|<1
+\Longrightarrow \biggr|\frac{x}{2}\biggr|<1
 \Longrightarrow |x|<2
 \Longrightarrow x \in (-2,2)
 $$
@@ -85,8 +86,8 @@ f(x)=\frac{1}{2-x}, c=5 \Longrightarrow f(x)=\frac{1}{2-5-(x-5)}
 \Longrightarrow \frac{1}{-3-(x-5)}
 $$
 $$
-\Longrightarrow -\frac{1}{3}*\frac{1}{1-\frac{-(x-5)}{3}}
-\Longrightarrow \sum_{n=0}^{\infty}{-\frac{1}{3}*(\frac{-(x-5)}{3})^n}
+\Longrightarrow -\frac{1}{3}\cdot \frac{1}{1-\frac{-(x-5)}{3}}
+\Longrightarrow \sum_{n=0}^{\infty}{-\frac{1}{3}\cdot (\frac{-(x-5)}{3})^n}
 $$
 $$
 \Longrightarrow \sum_{n=0}^{\infty}{(-\frac{1}{3})^{n+1}(-(x-5))^n}
@@ -103,17 +104,17 @@ Now let's completely change it up.
 
 $$
 f(x)=\frac{3}{2x-1}, c=0 
-\Longrightarrow f(x)=-3*\frac{1}{1-2x}
-\Longrightarrow *\sum_{n=0}^{\infty}{-3*(2x)^n}, c \in (-\frac{1}{2},\frac{1}{2})
+\Longrightarrow f(x)=-3\cdot \frac{1}{1-2x}
+\Longrightarrow \cdot \sum_{n=0}^{\infty}{-3\cdot (2x)^n}, c \in (-\frac{1}{2},\frac{1}{2})
 $$
 Let's move the center
 $$
 f(x)=\frac{3}{2x-1}, c=-3
 \Longrightarrow f(x)=\frac{1}{2(x+3)-5-6}
-\Longrightarrow f(x)=-\frac{1}{11}*\frac{1}{1-\frac{2}{11}(x+3)}
+\Longrightarrow f(x)=-\frac{1}{11}\cdot \frac{1}{1-\frac{2}{11}(x+3)}
 $$
 $$
-f(x)=\sum_{n=0}^{\infty}{-\frac{1}{11}*(\frac{2}{11}(x+3))^n}
+f(x)=\sum_{n=0}^{\infty}{-\frac{1}{11}\cdot (\frac{2}{11}(x+3))^n}
 $$
 $$
 \frac{2}{11}(x+3) \in (-1,1) 
@@ -124,7 +125,7 @@ $$
 What if there is no $-x$? You can just do $-(-x)$. Remember: Basic Algebra will take you a long way.
 
 $$
-f(x)=\frac{3}{x+2}, c=0 \Longrightarrow f(x)=\frac{3}{2}*\frac{1}{1-\frac{1}{2}(-x)}
+f(x)=\frac{3}{x+2}, c=0 \Longrightarrow f(x)=\frac{3}{2}\cdot \frac{1}{1-\frac{1}{2}(-x)}
 $$
 
 What if your function looks a bit more complicated?
@@ -261,16 +262,16 @@ Say we wanted to find $\ln|\frac{3}{2}|$ and approximate error to be 0.05 or les
     \Longrightarrow \sum_{n=0}^{\infty}{-(-(x-2))^n} = 
     \sum_{n=0}^{\infty}{(-1)^{n+1}(x-2)^n} = -1+(x-2)-\frac{1}{2}(x-2)^2+\frac{1}{3}(x-2)^3+... \\
     \int{-\frac{1}{1-(-(x-2))}}dx = \int{-1+(x-2)-\frac{1}{2}(x-2)^2+\frac{1}{3!}(x-2)^3+...}dx \\
-    \Longrightarrow -\ln|1-(-(x-2))|=C-x+\frac{(x-2)^2}{2}-\frac{(x-2)^3}{3*2!}+\frac{(x-2)^4}{4*3!}+... \\
+    \Longrightarrow -\ln|1-(-(x-2))|=C-x+\frac{(x-2)^2}{2}-\frac{(x-2)^3}{3\cdot 2!}+\frac{(x-2)^4}{4\cdot 3!}+... \\
     \longrightarrow \ln|1-(-(2-2))|=\ln|1| \\
-    \longrightarrow C+x-\frac{(x-2)^2}{2}+\frac{(x-2)^3}{3*2!}-\frac{(x-2)^4}{4*3!}+... \\
+    \longrightarrow C+x-\frac{(x-2)^2}{2}+\frac{(x-2)^3}{3\cdot 2!}-\frac{(x-2)^4}{4\cdot 3!}+... \\
     \longrightarrow \ln|1|=C+2+0+... \longrightarrow C=-2 \\
-    \Longrightarrow \ln|1-(-(x-2))|=-2+x-\frac{(x-2)^2}{2}+\frac{(x-2)^3}{3*2!}-\frac{(x-2)^4}{4*3!}+... \\
+    \Longrightarrow \ln|1-(-(x-2))|=-2+x-\frac{(x-2)^2}{2}+\frac{(x-2)^3}{3\cdot 2!}-\frac{(x-2)^4}{4\cdot 3!}+... \\
     \Longrightarrow \ln|\frac{3}{2}|=\ln|1-(-(\frac{5}{2}-2))|=
     (\frac{5}{2}-2)-\frac{(\frac{5}{2}-2)^2}{2}
-    +\frac{(\frac{5}{2}-2)^3}{3*2!}-\frac{(\frac{5}{2}-2)^4}{4*3!}+...\\
-    \Longrightarrow  \frac{1}{2}-\frac{1}{2}*(\frac{1}{2})^2+\frac{1}{3}*(\frac{1}{2})^3
-    -\frac{1}{4}*(\frac{1}{2})^4+...\\
+    +\frac{(\frac{5}{2}-2)^3}{3\cdot 2!}-\frac{(\frac{5}{2}-2)^4}{4\cdot 3!}+...\\
+    \Longrightarrow  \frac{1}{2}-\frac{1}{2}\cdot (\frac{1}{2})^2+\frac{1}{3}\cdot (\frac{1}{2})^3
+    -\frac{1}{4}\cdot (\frac{1}{2})^4+...\\
 \end{align*}
 Since it's an alternating series, it should be pretty simple to solve for from here.
 \subsubsection{Another Problem}
@@ -336,14 +337,14 @@ Divergent
 
 \section{Convergent or Divergent}
 
-\subsection{Divergence Test}
+\subsection{nth Term Test for Divergence}
 If
 $$
-\lim_{x \to \infty}f(x)\neq 0
+\lim_{x \to \infty}a_x\neq 0
 $$
 then $f$ is divergent. If
 $$
-\lim_{x \to \infty}f(x)=0
+\lim_{x \to \infty}a_x=0
 $$
 then use another test, it's inconclusive.
 
@@ -362,8 +363,8 @@ Example:
     \sum_{n=0}^{\infty}{\frac{(-1)^{n-1}n^2}{2^n}}
     \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{(-1)^{n}(n+1)^2}{2^{n+1}}}
         {\frac{(-1)^{n-1}n^2}{2^n}}|}=0
-    \Longrightarrow \lim_{n \to \infty}{|\frac{(-1)^{n}(n+1)^2*2^n}{2^n*2*(-1)^{n-1}n^2}|} \\
-    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2}{2*-1*n^2}|}=\frac{1}{2}
+    \Longrightarrow \lim_{n \to \infty}{|\frac{(-1)^{n}(n+1)^2\cdot 2^n}{2^n\cdot 2\cdot (-1)^{n-1}n^2}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2}{2\cdot -1\cdot n^2}|}=\frac{1}{2}
 \end{align*}
 
 If $|r|=1$, we have a problem. Recall the limit from the geometric series proof:
@@ -373,27 +374,28 @@ $$
 
 That's going to be undefined. So we have to use another test.
 
+This test is best used for rapidly growing questions like $n!$.
+
 \subsubsection{More Examples}
 
 \begin{align*}
-    \sum_{n=0}^{\infty}{\frac{e^n}{n^3}}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{e^n*e}{(n+1)^3}}{\frac{e^n}{n^3}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{e*n^3}{(n+1)^3}|}=e\not < 1
+    \sum_{n=0}^{\infty}{\frac{e^n}{n^3}} \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{e^n\cdot e}{(n+1)^3}}{\frac{e^n}{n^3}}|}
+    \Longrightarrow \lim_{n \to \infty}{|\frac{e\cdot n^3}{(n+1)^3}|}=e\not < 1
 \end{align*}
 Divergent
 \begin{align*}
     \sum_{n=0}^{\infty}{\frac{(n!)^2}{(3n)!}}
     \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{((n+1)!)^2}{(3n+3)!}}{\frac{(n!)^2}{(3n)!}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{((n+1)!)^2*(3n)!}{(3n+3)!*(n!)^2}|} \\
-    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2*(n!)^2*(3n)!}{(3n+3)*(3n+2)*(3n+1)*(3n)!*(n!)^2}|} \\
-    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2}{(3n+3)*(3n+2)*(3n+1)}|}=0<1
+    \Longrightarrow \lim_{n \to \infty}{|\frac{((n+1)!)^2\cdot (3n)!}{(3n+3)!\cdot (n!)^2}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2\cdot (n!)^2\cdot (3n)!}{(3n+3)\cdot (3n+2)\cdot (3n+1)\cdot (3n)!\cdot (n!)^2}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)^2}{(3n+3)\cdot (3n+2)\cdot (3n+1)}|}=0<1
 \end{align*}
 Convergent
 \begin{align*}
     \sum_{n=0}^{\infty}{\frac{n!}{n^{n+1}}}
     \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{(n+1)!}{(n+1)^{n+2}}}{\frac{n!}{n^{n+1}}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)!*n^{n+1}}{n!*(n+1)^{n+2}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{n!*n^{n+1}}{n!*(n+1)^{n+1}}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{(n+1)!\cdot n^{n+1}}{n!\cdot (n+1)^{n+2}}|}
+    \Longrightarrow \lim_{n \to \infty}{|\frac{n!\cdot n^{n+1}}{n!\cdot (n+1)^{n+1}}|} \\
     \Longrightarrow \lim_{n \to \infty}{|(\frac{n}{n+1})^{n+1}|}=
                     \lim_{n \to \infty}{|(\frac{n+1-1}{n+1})^{n+1}|}=
                     \lim_{n \to \infty}{|(1-\frac{1}{n+1})^{n+1}|}=\\
@@ -403,10 +405,10 @@ Convergent
 \begin{align*}
     \sum_{n=1}^{\infty}{\frac{3^{1-2n}}{n^2+1}}
     \Longrightarrow \lim_{n \to \infty}{|\frac{\frac{3^{1-2n-2}}{(n+1)^2+1}}{\frac{3^{1-2n}}{n^2+1}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{3^{-1-2n}*(n^2+1)}{(n+1)^2+1*3^{1-2n}}|} \\
-    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1*3^{1-2n}*3^{1+2n}}|}
-    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1*3*3^{-2n}*3*3^{2n}}|} \\
-    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1*3*3}|}=\frac{1}{9}
+    \Longrightarrow \lim_{n \to \infty}{|\frac{3^{-1-2n}\cdot (n^2+1)}{(n+1)^2+1\cdot 3^{1-2n}}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1\cdot 3^{1-2n}\cdot 3^{1+2n}}|}
+    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1\cdot 3\cdot 3^{-2n}\cdot 3\cdot 3^{2n}}|} \\
+    \Longrightarrow \lim_{n \to \infty}{|\frac{n^2+1}{(n+1)^2+1\cdot 3\cdot 3}|}=\frac{1}{9}
 \end{align*}
 Convergent
 \begin{align*}
@@ -501,7 +503,9 @@ If $a_n < b_n$ for all $n$ and $\lim_{n \to \infty}{\sum_i^n{b_i}}=\infty$
 then $\lim_{n \to \infty}{\sum_i^n{a_i}}$ could equal $L_2$ or $\infty$.\\
 
 If $a_n > b_n$ for all $n$ and $\lim_{n \to \infty}{\sum_i^n{b_i}}=\infty$
-then $\lim_{n \to \infty}{\sum_i^n{a_i}}=\infty$.
+then $\lim_{n \to \infty}{\sum_i^n{a_i}}=\infty$. \\
+
+It is recommended to use this test only if the degree is the same.
 
 \subsubsection{Examples}
 
@@ -515,7 +519,440 @@ Convergent
 
 \subsection{Limit Comparison Test}
 $$
-\lim_{n \to \infty}{\frac{b_n}{a_n}}
+\lim_{n \to \infty}{\frac{a_n}{b_n}}
 $$
 For $0<n<\infty$ (if it is 0 or $\infty$ anyway, the previous test would suffice).
+
+\subsubsection{Examples}
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{n}{n^2+1}}=\frac{1}{2}+\frac{2}{5}+\frac{3}{10}+...\\
+    \sum_{n=1}^{\infty}{\frac{n}{n^2}}=\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+...\\
+    \Longrightarrow \sum_{n=1}^{\infty}{\frac{1}{n}} > \sum_{n=1}^{\infty}{\frac{n}{n^2+1}} 
+    =\lim_{n \to \infty}{\frac{1}{n}} > \lim_{n \to \infty}{\frac{n}{n^2+1}}
+    =\infty > \lim_{n \to \infty}{\frac{n}{n^2}}
+\end{align*} 
+Inconclusive
+\begin{align*}
+    \lim_{n \to \infty}{\frac{\frac{n}{n^2+1}}{\frac{1}{n}}}
+    =\lim_{n \to \infty}{\frac{n^2}{n^2+1}}=1
+\end{align*}
+Convergent
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{5n-3}{n^2-2n+5}}=\frac{-3}{5}+\frac{2}{4}+\frac{7}{5}+
+        \frac{12}{8}+\frac{17}{13}...\\
+    \sum_{n=1}^{\infty}{\frac{n}{n^2}}=\frac{1}{1}+\frac{1}{2}+\frac{1}{3}+
+        \frac{1}{4}+\frac{1}{5}...\\
+    \Longrightarrow \lim_{n \to \infty}{\frac{\frac{5n-3}{n^2-2n+5}}{\frac{1}{n}}} =
+        \lim_{n \to \infty}{\frac{5n^2-3n}{n^2-2n+5}}=5 \\
+    \lim_{n \to \infty}{\frac{1}{n}}=\infty \therefore \lim_{n \to \infty}{\frac{5n-3}{n^2-2n+5}}=\infty
+\end{align*}
+Divergent
+
+\subsection{Alternating Series \sout{Property} Theorem}
+
+Recall the Alternating Error Bound for a series. Take this example:
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{(-1)^{n+1}}{n}}=\frac{1}{1}-\frac{1}{2}+\frac{1}{3}-\frac{1}{4}+...
+\end{align*}
+
+Since the sum is \textbf{decreasing} and $\lim_{n \to \infty}{\frac{1}{n}}=0$ (since $n$ is increasing), there is an error bound, meaning this alternating series is convergent. Note that this "test" doesn't apply to oscillating serieses like $sin(x)$. \\
+
+\subsubsection{Example}
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{(-1)^{n+1}n}{2n+1}}\\
+    \lim_{n \to \infty}{\frac{n}{2n+1}}=\frac{1}{2} 
+    \Longrightarrow \approx \sum_{n=1}^{\infty}{\frac{(-1)^{n+1}}{2}}
+\end{align*}
+This sum does not reach 0, it osciilates. It is not convergent.
+
+\subsection{Absolute Convergence Test}
+Let $a_n$ represent a sequence with positive and negative terms. \\
+
+Using some common sense, we can derive the following:
+
+\begin{align*}
+    n \in \mathbb{R} \Longrightarrow n \leq |n| \\
+    \therefore a_n \leq |a_n| \\
+    \Longrightarrow a_n + |a_n| \leq 2 |a_n| \\
+    \longrightarrow |a_n| + a_n = 0 \quad\text{or}\quad 
+    2a_n \therefore 0 \leq a_n+|a_n| \leq 2a_n
+\end{align*}
+
+By the Direct Comparsion test:
+\begin{align*}
+    \sum_{n=1}^{\infty}{|a_n|} = L \therefore \sum_{n=1}^{\infty}{a_n} = L_2
+\end{align*}
+In this case it is absolutely convergent. In the scenario that:
+\begin{align*}
+\sum_{n=1}^{\infty}{|a_n|} = \infty
+\end{align*}
+It is inconclusive. If the other alternating series tests passes, it is \textbf{Conditionally Convergent}.
+
+\subsection{Examples}
+
+\begin{align*}
+    \sum_{n=2}^{\infty}{\frac{n}{\ln n}}
+    \Longrightarrow \lim_{n \to \infty}{\frac{n}{\ln n}}=\infty
+\end{align*}
+Divergent by nth Term Test for Divergence
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{2^n}{n^{99}}}
+    \Longrightarrow \lim_{n \to \infty}{\frac{2^n}{n^{99}}}=\infty
+\end{align*}
+Divergent by nth Term Test for Divergence
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{\sqrt{n^2+1}}{n}}
+    \Longrightarrow \lim_{n \to \infty}{\frac{\sqrt{n^2+1}}{n}} 
+    \approx \lim_{n \to \infty}{\frac{\sqrt{n^2}}{n}}
+    =\lim_{n \to \infty}{\frac{n}{n}}=1
+\end{align*}
+Divergent by nth Term Test for Divergence
+
+\begin{align*}
+    \sum_{n=2}^{\infty}{\frac{n^e}{n^{\pi}}}
+    =\sum_{n=2}^{\infty}{\frac{1}{n^{\pi-e}}}
+    \Longrightarrow 1\geq \pi-e
+\end{align*}
+Divergent by property of P-Series
+
+\begin{align*}
+    \sum_{n=0}^{\infty}{\frac{1}{\sqrt{n+8}}}=\frac{1}{\sqrt{8}}+\sum_{n=1}^{\infty}{\frac{1}{\sqrt{n+8}}}=\frac{1}{\sqrt{8}}+\frac{1}{3}+\frac{1}{\sqrt{10}}+... \\
+    \sum_{n=1}^{\infty}{\frac{1}{\sqrt{n}}}=\frac{1}{\sqrt{1}}+\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{3}}+... \\
+    \Longrightarrow \lim_{n \to \infty}{\frac{\frac{1}{\sqrt{n+8}}}{\frac{1}{\sqrt{n}}}}
+    =               \lim_{n \to \infty}{\frac{\sqrt{n+8}}{\sqrt{n}}}=1
+\end{align*}
+Divergent by Limit Comparison Test
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{(-1)^n}{n!}}=\frac{1}{1}-\frac{1}{1!}+\frac{1}{2!}-\frac{1}{3!}+...
+\end{align*}
+Convergent by Properties of Alternating Series:
+\begin{enumerate}
+    \item It is decreasing
+    \item It is approaching 0
+    \item It is alternating
+\end{enumerate}
+
+\begin{align*}
+    \sum_{n=3}^{\infty}{\frac{4}{n\sqrt{\ln n}}}=\frac{4}{3\sqrt{\ln 3}}+\frac{4}{4\sqrt{\ln 4}}+\frac{4}{5\sqrt{\ln 5}}+... \\
+    \sum_{n=3}^{\infty}{\frac{4}{n}}=\frac{4}{3}+\frac{4}{4}+\frac{4}{5}+... \\
+    \Longrightarrow \sum_{n=3}^{\infty}{\frac{4}{n\sqrt{\ln n}}} < \sum_{n=3}^{\infty}{\frac{4}{n}}, \sum_{n=3}^{\infty}{\frac{4}{n}}=\infty \\
+    \Longrightarrow \lim_{n \to \infty}{\frac{\frac{4}{n\sqrt{\ln n}}}{\frac{4}{n}}}=0 \\
+    \lim_{n \to \infty}{\frac{\frac{4}{n\sqrt{\ln (n+1)}+\sqrt{\ln (n+1)}}}{\frac{4}{n\sqrt{\ln n}}}}=???
+\end{align*}
+After trying three tests, we are left with the Integral Test
+
+\begin{align*}
+    \sum_{n=3}^{\infty}{\frac{4}{n\sqrt{\ln n}}}  \\
+    \Longrightarrow 4\int_3^{\infty}{\frac{1}{n\sqrt{\ln n}}}dn, 
+    u=\ln n, \quad du=\frac{1}{n}dn \\
+    \Longrightarrow 4\int_{\ln 3}^{\infty}{\frac{1}{\sqrt{u}}}du
+    =\int_{\ln 3}^{\infty}{u^{-\frac{1}{2}}}du=4*[2u^{\frac{1}{2}}]\biggr\rvert^{\infty}_{\ln 3}
+\end{align*}
+Divergent by Integral Test
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{1}{\sqrt[3]{27n^2}}}
+    = \frac{1}{3}\sum_{n=1}^{\infty}{\frac{1}{n^{\frac{2}{3}}}}
+\end{align*}
+Divergent by Property of P-Series
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{n}{\sqrt{n^2+1}}}
+    \Longrightarrow \lim_{x \ to \infty}{\frac{x}{\sqrt{x^2+1}}}
+    \approx \lim_{x \ to \infty}{\frac{x}{x}}=1
+\end{align*}
+Divergent by nth Term Test for Divergence
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\sqrt{\frac{n+1}{n}}}
+\end{align*}
+Be careful, this is NOT a disguised $\frac{1}{e}$. 
+\begin{align*}
+    \approx \sum_{n=1}^{\infty}{\sqrt{\frac{n}{n}}}=1
+\end{align*}
+
+Divergent by nth Term Test for Divergence
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{2^n+3^n}{4^n}}
+    =\sum_{n=1}^{\infty}{\frac{2^n}{4^n}+\frac{3^n}{4^n}}
+    =\sum_{n=1}^{\infty}{\frac{2^n}{4^n}}+\sum_{n=1}^{\infty}{\frac{3^n}{4^n}}
+    =\sum_{n=1}^{\infty}{\biggr(\frac{2}{4}\biggr)^n}
+        +\sum_{n=1}^{\infty}{\biggr(\frac{3}{4}\biggr)^n}
+\end{align*}
+
+Convergent by Property of Geometric Series
+
+\begin{align*}
+    \sum_{n=3}^{\infty}{\frac{1}{n(\ln n)(\ln (\ln n))}}
+    =\sum_{n=3}^{\infty}{\frac{1}{n(\ln n)}\frac{1}{(\ln (\ln n))}} \\
+    \Longrightarrow \sum_{n=3}^{\infty}{\frac{1}{\ln (\ln n)}} 
+    =\frac{1}{\ln (\ln 3)}+\frac{1}{\ln (\ln 4)} + \frac{1}{\ln (\ln 5)} + ... \\
+    \sum_{n=3}^{\infty}{\frac{1}{n}}=\frac{1}{3}+\frac{1}{4}+\frac{1}{5}+... \\
+    \Longrightarrow \sum_{n=3}^{\infty}{\frac{1}{n}}<\sum_{n=3}^{\infty}{\frac{1}{\ln (\ln n)}} \\
+    \sum_{n=3}^{\infty}{\frac{1}{n}}=\infty \therefore \sum_{n=3}^{\infty}{\frac{1}{\ln (\ln n)}}=\infty
+\end{align*}
+
+A divergent sum times any sum is divergent. \\
+Divergent by Property of P-Series
+
+\begin{align*}
+    \sum_{n=3}^{\infty}{\frac{1}{2^n-n}}=\frac{1}{5}+\frac{1}{12}+\frac{1}{27}+...\\
+    \sum_{n=3}^{\infty}{\frac{1}{2^n}}=\frac{1}{8}+\frac{1}{16}+\frac{1}{32}+...\\
+    \sum_{n=3}^{\infty}{\frac{1}{2^n-n}}>\sum_{n=3}^{\infty}{\frac{1}{2^n}} \\
+    \sum_{n=3}^{\infty}{\frac{1}{2^n}}=L\\
+    \lim_{n \to \infty}{\frac{\frac{1}{2^n-n}}{\frac{1}{2^n}}}
+    =\lim_{n \to \infty}{\frac{2^n}{2^n-n}}=1
+\end{align*}
+Convergent by Limit Comparison Test
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{5+8^n}{2-7^n}}
+    =\sum_{n=1}^{\infty}{\biggr(\frac{5}{2-7^n}+\frac{8^n}{2-7^n}\biggr)}
+    =\sum_{n=1}^{\infty}{\biggr(\frac{5}{2-7^n}-\frac{8^n}{7^n-2}\biggr)} \\
+    \Longrightarrow \sum_{n=1}^{\infty}{\frac{8^n}{7^n-2}}=\frac{8}{5}+\frac{64}{47}+... \\
+    \lim_{n \to \infty}{\frac{8^n}{7^n-2}} 
+    \approx \lim_{n \to \infty}{\frac{8^n}{7^n}}
+    = \lim_{n \to \infty}{\biggr(\frac{8}{7}\biggr)^n} = \infty
+\end{align*}
+A divergent series plus any series is divergent. \\
+Divergent by nth Term Test for Divergence
+
+\section{More Examples}
+
+\begin{enumerate}
+
+\item \begin{align*}
+    \sum_{n=1}^{\infty}{(-1)^n\frac{(x-2)^n}{n+1}}
+\end{align*}
+
+For P-Series, you can \textbf{only use} the Ratio Test to determine Convergence over an Interval
+
+\begin{align*}
+    \Longrightarrow \lim_{n \to \infty}{\frac{\frac{(-1)^{n+1}(x-2)^{n+1}}{n+2}}{\frac{(-1)^n(x-2)^n}{n+1}}}
+    = \lim_{n \to \infty}{\biggr|\frac{(n+1)(-1)^{n+1}(x-2)^{n+1}}{(n+2)(-1)^n(x-2)^n}\biggr|}
+    = \lim_{n \to \infty}{\biggr|\frac{(n+1)(x-2)}{(n+2)}\biggr|} \\
+    = \lim_{n \to \infty}{|x-2|} < 1 \\
+    \Longrightarrow 1 < x < 3 
+\end{align*}
+Now you have to test the values 1 and 3.
+
+\begin{align*}
+    \sum_{n=0}^{\infty}{\biggr|(-1)^n\frac{(x-2)^n}{n+1}\biggr|} \\
+    \longrightarrow \sum_{n=0}^{\infty}{\biggr|(-1)^n\frac{(1-2)^n}{n+1}\biggr|} \\
+    \longrightarrow \sum_{n=0}^{\infty}{\biggr|(-1)^n\frac{(-1)^n}{n+1}\biggr|} 
+    =               \sum_{n=0}^{\infty}{\biggr|\frac{1}{n+1}\biggr|} 
+\end{align*}
+Divergent by Comparsion Test
+\begin{align*}
+    \sum_{n=0}^{\infty}{\biggr|(-1)^n\frac{(3-2)^n}{n+1}\biggr|} \\
+    \longrightarrow \sum_{n=0}^{\infty}{\biggr|(-1)^n\frac{(1)^n}{n+1}\biggr|} \\
+    \longrightarrow \sum_{n=0}^{\infty}{\biggr|\frac{(-1)^n}{n+1}\biggr|} 
+    =               \sum_{n=0}^{\infty}{\biggr|\frac{(-1)^n}{n+1}\biggr|} 
+\end{align*}
+Convergent by Alternating Series "Test"
+$$
+1 < x \leq 3
+$$
+
+\item \begin{align*}
+    \sum_{n=1}^{\infty}{\frac{x^nn^n}{3^nn!}} \\
+    \Longrightarrow \lim_{n \to \infty}{\biggr|\frac{\frac{x^{n+1}(n+1)^{n+1}}{3^{n+1}(n+1)!}}{\frac{x^nn^n}{3^nn!}}\biggr|}
+    = \lim_{n \to \infty}{\biggr|\frac{x^{n+1}(n+1)^{n+1}3^nn!}{x^nn^n3^{n+1}(n+1)!}\biggr|}
+    = \lim_{n \to \infty}{\biggr|\frac{x^{n+1}(n+1)(n+1)^{n}n!}{x^nn^n3(n+1)!}\biggr|} \\
+    = \lim_{n \to \infty}{\biggr|\frac{x(n+1)^{n}n!}{n^n3n!}\biggr|}
+    = \frac{1}{3}\lim_{n \to \infty}{\biggr|x\biggr(\frac{n+1}{n}\biggr)^n\biggr|}
+    = \frac{1}{3}\lim_{n \to \infty}{\biggr|x\biggr(1+\frac{1}{n}\biggr)^n\biggr|} \\
+    \Longrightarrow \biggr|\frac{e}{3}x\biggr|<1 \Longrightarrow -\frac{3}{e}<x<\frac{3}{e}
+\end{align*}
+Plug in the endpoints:
+\begin{align*}
+    \sum_{n=1}^{\infty}{\frac{(-\frac{3}{e})^nn^n}{3^nn!}}
+    = \sum_{n=1}^{\infty}{\frac{(-1)^n(3)^nn^n}{e^n3^nn!}}
+    = \sum_{n=1}^{\infty}{\frac{(-1)^nn^n}{e^nn!}}
+\end{align*}
+Look at the graph and compare it against $\frac{1}{n}$.
+
+\item \begin{align*}
+    \sum_{k=0}^{\infty}{\frac{2^kx^k}{\ln(k+2)}} \\
+    \lim_{k \to \infty}{\biggr|\frac{\frac{2^{k+1}x^{k+1}}{\ln((k+1)+2)}}{\frac{2^kx^k}{\ln(k+2)}}\biggr|}
+    =\lim_{k \to \infty}{\biggr|\frac{2^{k+1}x^{k+1}\ln (k+2)}{2^kx^k\ln((k+1)+2)}\biggr|}
+    =\lim_{k \to \infty}{\biggr|\frac{2x\ln (k+2)}{\ln(k+2+1)}\biggr|}=2x \\
+    -\frac{1}{2}<x<\frac{1}{2}
+\end{align*}
+
+Plug in the endpoints:
+\begin{align*}
+    \sum_{k=0}^{\infty}{\frac{2^k\biggr(\frac{-1}{2}\biggr)^k}{\ln(k+2)}} 
+    =\sum_{k=0}^{\infty}{\frac{(-1)^k}{\ln(k+2)}} 
+\end{align*}
+
+\begin{enumerate}
+    \item Alternating
+    \item Approaching 0
+    \item Decreasing
+\end{enumerate}
+$k=-\frac{1}{2}$ Convergent
+
+\begin{align*}
+    \sum_{k=0}^{\infty}{\frac{2^k\biggr(\frac{1}{2}\biggr)^k}{\ln(k+2)}} 
+    =\sum_{k=0}^{\infty}{\frac{1^k}{\ln(k+2)}} 
+    =\sum_{k=0}^{\infty}{\frac{1}{\ln(k+2)}} \\
+    \sum_{k=0}^{\infty}{\frac{1}{\ln(k+2)}}=\frac{1}{\ln 2} + \sum_{k=1}^{\infty}{\frac{1}{\ln(k+2)}}=\frac{1}{\ln 2} + \frac{1}{\ln 3} + \frac{1}{\ln 4} + \cdots \\
+    \sum_{k=1}^{\infty}{\frac{1}{k}}=\frac{1}{1} + \frac{1}{ 2} + \frac{1}{3} + \frac{1}{4} + \cdots
+    \sum_{k=1}^{\infty}{\frac{1}{\ln(k+2)}} > \sum_{k=1}^{\infty}{\frac{1}{k}}
+\end{align*}
+First few terms ignored
+\begin{align*}
+    \sum_{k=1}^{\infty}{\frac{1}{k}} = \infty 
+    \therefore \sum_{k=1}^{\infty}{\frac{1}{\ln(k+2)}} = \infty
+\end{align*}
+
+\item Find the first three terms and the general term for the Maclaurin series for the derivative of the following:
+
+\begin{align*}
+    f(x)=\frac{1}{1+x^3}=1-x^3+x^6-x^9+\cdots+(-1)^nx^{3n}+\cdots \\
+    f'(x)=-\frac{3x^2}{(1+x^3)^2}=-3x^2+3x^5+3x^8+\cdots+(-1)^n(3n)x^{3n-1}+\cdots \\
+    -\frac{3}{2^2}+\frac{6}{2^5}-\frac{9}{2^8}+\cdots=-3x^2+3x^5+3x^8+\cdots 
+    \Longrightarrow x=\frac{1}{2} \\
+    f'\biggr(\frac{1}{2}\biggr)=-\frac{3(\frac{1}{2})^2}{(1+(\frac{1}{2})^3)^2}=-\frac{\frac{3}{4}}{\frac{81}{64}}=-\frac{16}{27}
+\end{align*}
+
+\item Consider the following series where $p \geq 0$:
+
+\begin{align*}
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}}
+\end{align*}
+
+\begin{enumerate}
+    \item for $p > 1$
+\begin{align*}
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}} < \sum_{n=2}^{\infty}{\frac{1}{n^p}} \\
+    \sum_{n=2}^{\infty}{\frac{1}{n^p}} = L \therefore
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}} = L_2
+\end{align*}
+
+    \item for $p = 1$
+\begin{align*}
+    u=\ln n, \quad du=\frac{1}{n}dn \\
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}} = \int_{\ln 2}^{\infty}{\frac{1}{u}}du \Longrightarrow \ln( \ln ( n))\biggr\rvert^{\infty}_{2}=\infty
+\end{align*}
+
+    \item for $p < 1$
+\begin{align*}
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}} > \sum_{n=2}^{\infty}{\frac{1}{n^p}} \\
+    \sum_{n=2}^{\infty}{\frac{1}{n^p}} = \infty \therefore
+    \sum_{n=2}^{\infty}{\frac{1}{n^p \ln(n)}} = \infty
+\end{align*}
+\end{enumerate}
+
+\item The Maclaurin series for $f(x)$ is given $1+\frac{x}{2!}+\frac{x^2}{3!}+\frac{x^3}{4!}+\cdots+\frac{x^n}{(n+1)!}+\cdots$ where $x$ is a positive real number. 
+
+\begin{align*}
+    f'(0)=\frac{1}{2} \qquad f^{(17)}(0)=\frac{1}{17!}
+\end{align*}
+
+Convergent for what values of $x$?
+\begin{align*}
+    \lim_{n \to \infty}{\frac{x^{n+1}}{(n+2)!}*\frac{(n+1)!}{x^n}} < 1 \\
+    \Longrightarrow \lim_{n \to \infty}{\biggr|\frac{x}{(n+2)}\biggr|} < 1 
+    \Longrightarrow x \in \mathbb{R}
+\end{align*}
+
+\item A Taylor series for a function is given about $x=1$ and converges to $f(x)$ for $|x-1| < R$ where $R$ is the radius of convergence for the series.
+
+\begin{align*}
+    \sum_{n=1}^{\infty}{(-1)^{n+1}\frac{2^n}{n}(x-1)^n}
+    \Longrightarrow \lim_{n \to \infty}{\biggr|\frac{(-1)^{n+2}\frac{2^{n+1}}{n+1}(x-1)^{n+1}}{(-1)^{n+1}\frac{2^n}{n}(x-1)^n} \biggr|} \\
+    \Longrightarrow \lim_{n \to \infty}{\biggr|\frac{\frac{2}{n+1}(x-1)^{n+1}}{\frac{1}{n}(x-1)^n} \biggr|}
+    \Longrightarrow \lim_{n \to \infty}{\biggr|\frac{2n}{n+1}(x-1)\biggr|}
+    \Longrightarrow |2(x-1)|<1 \\
+    \Longrightarrow -\frac{1}{2} < x-1 < \frac{1}{2} \\
+    \sum_{n=1}^{\infty}{(-1)^{n+1}\frac{2^n}{n}(-\frac{1}{2}-1)^n}
+    = \sum_{n=1}^{\infty}{(-1)^{n+1}\frac{2^n}{n}(-1)^n(\frac{3}{2})^n}
+    = \sum_{n=1}^{\infty}{-\frac{2^n}{n}(\frac{3}{2})^n}
+    = \sum_{n=1}^{\infty}{-\frac{3^n}{n}} \\
+    \Longrightarrow \lim_{n \to \infty}{-\frac{3^n}{n}}=-\infty \\
+    \sum_{n=1}^{\infty}{(-1)^{n+1}\frac{2^n}{n}(\frac{1}{2}-1)^n}
+    = \sum_{n=1}^{\infty}{(-1)^{n+1}(-1)^n\frac{2^n}{n}(\frac{1}{2})^n}
+    = \sum_{n=1}^{\infty}{-\frac{1^n}{n}}
+    = \sum_{n=1}^{\infty}{-\frac{1}{n}}= \infty \text{ (P series)} \\
+    \Longrightarrow -\frac{1}{2} < x-1 < \frac{1}{2} 
+\end{align*}
+
+Find the derivative series
+\begin{align*}
+    f(x)=\sum_{n=1}^{\infty}{(-1)^{n+1}\frac{2^n}{n}(x-1)^n}=2(x-1)-2(x-1)^2+\frac{8}{3}(x-1)^3+\cdots \\
+    f'(x)=2-4(x-1)+8(x-1)^2+\cdots+(-1)^{n+1}2^n(x-1)^{n-1}+\cdots
+\end{align*}
+Integrate $f'(x)$ to find $f(x)$.
+\begin{align*}
+    f'(x)
+    = \sum_{n=1}^{\infty}2(-2(x-1))^{n-1}
+    =\frac{2}{1--(2(x-1))}
+    = \frac{2}{2x-1} \\ 
+    f(x)=\int{\frac{2}{2x-1}}dx=\ln |2x-1| + C \\
+    f(1)=\ln |1| + C = 0 \Longrightarrow C = 0 \\
+    f(x)=\ln |2x-1|, x \in (-\frac{1}{2}, \frac{1}{2})
+\end{align*}
+
+\item Find interval of convergence for $f(x)$ and determine if it fits the differential $xy'-y=\frac{4x^2}{1+2x}$
+
+\begin{align*}
+    f(x)=\sum_{n=2}^{\infty}{\frac{(-1)^n(2x)^n}{n-1}}
+    =\sum_{n=2}^{\infty}{\frac{(-2)^n(x)^n}{n-1}} \\
+    f'(x)= \sum_{n=2}^{\infty}{\frac{n(-2)^n(x)^{n-1}}{n-1}} \\
+    xy'-y=\sum_{n=2}^{\infty}{\frac{n(-2)^n(x)^n}{n-1}}- \sum_{n=2}^{\infty}{\frac{(-1)^n(2x)^n}{n-1}}
+    =\sum_{n=2}^{\infty}{\frac{n(-2)^n(x)^n- (-1)^n(2x)^n}{n-1}} \\
+    =\sum_{n=2}^{\infty}{\frac{n(-2)^n(x)^n- (-1)^n(2x)^n}{n-1}}
+    =\sum_{n=2}^{\infty}{(-1)^n\frac{n-1}{n-1}(2x)^n}
+    =\sum_{n=2}^{\infty}{(-2x)^n} \\
+    =\sum_{n=0}^{\infty}{(4x^2)(-2x)^n}=\frac{4x^2}{1+2x}
+\end{align*}
+
+\item The function $f(x)$ is defined by the below series and $g(x)$ too.
+
+\begin{align*}
+    f(x)=\sum_{n=0}^{\infty}{\frac{(-1)^nnx^n}{n+1}} \\
+    g(x)=\sum_{n=0}^{\infty}{\frac{(-1)^nx^n}{(2n)!}}
+\end{align*}
+For example, here is $f(x)$'s interval of convergence:
+\begin{align*}
+    \lim_{n \to \infty}{\biggr|\frac{\frac{(-1)^{n+1}(n+1)x^{n+1}}{n+2}}{\frac{(-1)^nnx^n}{n+1}}\biggr|}
+    =\lim_{n \to \infty}{\biggr|\frac{\frac{(n+1)x}{n+2}}{\frac{n}{n+1}}\biggr|}
+    \Longrightarrow -1 < x < 1
+\end{align*}
+Test the endpoints as usual. \\
+
+Find $y=f(x)-g(x)$, passing through $(0,-1)$. Find $y'(0)$ and $y''(0)$ to determine if $y(0)$ is a relative max, min, or neither.
+
+\begin{align*}
+    y=\sum_{n=0}^{\infty}{\frac{(-1)^nnx^n}{n+1}}-  \sum_{n=0}^{\infty}{\frac{(-1)^nx^n}{(2n)!}} \\
+    =\sum_{n=0}^{\infty}{\biggr[\frac{(-1)^nnx^n}{n+1} - \frac{(-1)^nx^n}{(2n)!}\biggr]}
+    =\sum_{n=0}^{\infty}{(-x)^n\biggr[\frac{n(2n)!}{(n+1)(2n)!} - \frac{n+1}{(n+1)(2n)!}\biggr]} \\
+    =\sum_{n=0}^{\infty}{(-x)^n\biggr[\frac{n(2n)!- n-1}{(n+1)(2n)!}\biggr]} \\
+    =-1+0+(\frac{2x^2}{3}-\frac{x^2}{4!})+\cdots
+    =-1+\frac{4*2*2x^2-x^2}{4!}+\cdots
+    =-1+\frac{15x^2}{4!}+\cdots \\
+    =-1+\frac{5x^2}{8}+\cdots \\
+    y'(0)=0 \quad y''(0)=-\frac{5}{4}
+\end{align*}
+Minimum
+
+\item Find $k$ for which the following converges.
+
+\begin{align*}
+    \sum_{n=0}^{\infty}{((k^3+2)e^{-k})^n} \\
+    \Longrightarrow \lim_{n \to \infty}{\frac{((k^3+2)e^{-k})^{n+1}}{((k^3+2)e^{-k})^n}}
+    \Longrightarrow -1 < ((k^3+2)e^{-k}) < 1
+\end{align*}
+
+Use a graphing calculator to cook.
+
+\end{enumerate}
 \end{document}
