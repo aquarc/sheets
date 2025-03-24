@@ -51,7 +51,7 @@ You represent the function as $\langle x(t),y(t)\rangle$ and the derivative as $
 
 \begin{align*}
     \frac{dy}{dx}=\frac{\frac{dy}{dt}}{\frac{dx}{dt}} \\
-    \frac{d^2y}{dx^2}=\frac{d}{dx}[f'(t)]=f''(t)*\frac{dt}{dx}=\frac{\frac{d^2y}{dt^2}}{\frac{dx}{dt}}
+    \frac{d^2y}{dx^2}=\frac{d}{dx}[f'(t)]=\frac{d}{dt}f'(t)*\frac{dt}{dx}=\frac{\frac{d}{dt}[\frac{dy}{dx}]}{\frac{dx}{dt}}
 \end{align*}
 Speed:
 \begin{align*}
@@ -201,6 +201,34 @@ Find the area inside.
 
 \begin{align*}
     A=\frac{\pi 2^2}{2}+\frac{1}{2}\int_{\frac{\pi}{2}}^{\frac{3\pi}{2}}{(3+2\cos\theta)^2}d\theta
+\end{align*}
+
+Solve $\frac{dr}{dt}$ and $\frac{dy}{dt}$ for $t=\theta=\frac{\pi}{3}$.
+
+\begin{align*}
+    \frac{dr}{dt}=-2\sin\theta=-\sqrt{3}\\
+    r \sin\theta=3\sin\theta + 2\cos\theta\sin\theta\\
+    \Longrightarrow y = 3\sin\theta + \sin2\theta \\
+    \frac{dy}{dt}=3\cos\theta + 2\sin 2\theta=3*\frac{1}{2}+\sqrt{3}
+\end{align*}
+
+
+\begin{tikzpicture}
+   \begin{polaraxis}[xmin=0,xmax=360,
+       domain=0:360,
+       my style polar,
+       no markers]
+       \addplot +[orange, very thick, smooth] {3};
+       \addplot +[purple, very thick, smooth] {4 - 2 * sin(x)};
+    \end{polaraxis}
+\end{tikzpicture}
+
+They intersect at $\theta=\frac{\pi}{6}$ and $\theta=\frac{5\pi}{6}$.
+
+\begin{align*}
+    A=\int_0^{\frac{\pi}{6}}{3^2}d\theta
+        + \int_{\frac{\pi}{6}}^{\frac{5\pi}{6}}{(4-2\sin\theta)^2}d\theta 
+        + \int_{\frac{5\pi}{6}}^{2 \pi}{3^2}d\theta \\
 \end{align*}
 
 \end{document}

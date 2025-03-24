@@ -1109,5 +1109,68 @@ Design for Everyday things, Don Normal
 Don't make me think, i don't remember the author
 
 user conventions
+- https://www.nngroup.com/articles/design-pattern-guidelines/
 user patterns
+- https://www.nngroup.com/articles/consistency-and-standards/
 intense focus
+
+- first 2 questions - force to sign up
+- data analytics so users know what to focus on (bluebook practice tests bad)
+
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4475995
+- GPT wrapper
+
+Assessment framework digital SAT
+- page 55
+
+https://docs.google.com/document/d/1EnupeIt2ALOT4xfXGE_TkCrjqF7R2w2aYxYtRq2P9tA/edit?pli=1&tab=t.0
+
+the aiming for 800 questions
+
+
+do you get bored easy and start to lose focus on english module 2?
+
+If so, try this! (Note: this might not work for everyone)
+
+Trick your mind into thinking everything you’re reading is interesting. For example, if you’re reading about a new biological discovery, find interest in wondering, “What is this new biological discovery and I WANT TO KNOW ABOUT IT?”
+
+discord.gg/dsat
+
+## sadok
+- everyoen focus on that one thing
+- user centric design (?) it was confusing to him when math and english was hidden and there was no error
+
+# 3-23-2025
+worked SAT problems videos
+
+- give error when difficulty selected and math /eng not selected
+- pk advice (?)
+
+# 3-24-2025
+4. Break the Work into Atomic Habits
+
+To avoid burnout, chunk the project into tiny, testable components:
+Month 1: Data & Basic Insights
+
+    Build a CSV logger to track user guesses/times (no fancy databases yet).
+
+    Use pre-trained embeddings (e.g., GloVe) to cluster wrong answers by semantic similarity.
+
+    Output a weekly report: "Top 5 confused vocab words among users."
+
+Month 2: Minimal AI Integration
+
+    Fine-tune a small T5 model to generate quiz questions for confused words.
+
+    Add a button: "Struggling? Get a 1-minute vocab drill" (manually trigger it first).
+
+Month 3: Automation & Polish
+
+    Train a classifier to auto-suggest drills after X errors.
+
+    Use Gradio or Streamlit to build a demo interface for testers.
+
+- Text based evidence control: scientific, essay, quantitative, poem
+- SAT practice test from college board doesn't tell you what sections you failed
+- Information and Ideas: Command of Evidence, Scientific, search feature for sm like this
+
