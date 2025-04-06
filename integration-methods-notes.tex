@@ -655,4 +655,29 @@ $$
 \sum_{i=0}^{n-1}{\frac{(f(a+i\frac{b-a}{n}x)+f(a+(i+1)\frac{b-a}{n}x)(b-a)}{2n^2}}
 $$
 
+\section{Distance}
+
+The distance of the curve is represented by the following:
+
+\begin{align*}
+    \text{arc length}=\sqrt{(\Delta x)^2+(\Delta y)^2}=\sqrt{1+\left(\frac{\Delta y}{\Delta x}\right)^2}\Delta x \\
+    \Longrightarrow \int{\sqrt{1+(\frac{dy}{dx})^2}}dx
+\end{align*}
+
+\subsection{Example}
+
+These problems are taken from \textit{Calculus for the AP Course} by Michael Sullivan. 
+
+\begin{enumerate}
+    \item Let $g$ be the function defined by $g(x)=\int_1^x{\sqrt{9t^2-1}}dt$. Which integral represents the graph of $g$ on the interval $[2,5]$?
+
+    Let $f(x)=\sqrt{9t^2-1}$. Let $F(x)$ represent its antiderivative. 
+
+    \begin{align*}
+        g(x)=F(x)-F(1) \\
+        g'(x)=\sqrt{9x^2-1} \\
+        \int_2^5{\sqrt{1+9x^2-1}dx}=\int_2^5{3x}dx
+    \end{align*}
+\end{enumerate}
+
 \end{document}

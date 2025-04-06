@@ -1174,3 +1174,104 @@ Month 3: Automation & Polish
 - SAT practice test from college board doesn't tell you what sections you failed
 - Information and Ideas: Command of Evidence, Scientific, search feature for sm like this
 
+# 3-26-2025
+“What do I want to accomplish?
+FEEDFORWARD
+What are
+alternatives?
+What can I do?
+How do I do it?
+Is this okay?
+What does it mean?
+What happened?
+WORLD
+FEEDBACK”
+
+I think the solution is to incorporate more feedback, at least that's what it's trying to put out. A couple of ideas:
+- loading icon thing that's three dots: an action in progress, nothing is to be done
+- red border thing around the dropdown that indicates that something needs to be selected. 
+- a "ding" sound when you get something right 
+    - https://freesound.org/people/Bertrof/sounds/351566/
+- daily streak sound!!
+    - https://freesound.org/people/FoolBoyMedia/sounds/397435/
+- (no) negative feedback indicating that something was wrong
+- a red bar at the top or something that indicates "it's okay, try again"
+- use proper signifiers to denote a button for example, internet conventions
+    - designer job is to show signifiers
+    - https://www.nngroup.com/articles/flat-design-best-practices/
+    - literally says to avoid the thinly bordered thing
+    - timer
+    - https://www.nngroup.com/articles/clickable-elements/
+- ability to jump between questions
+    - https://www.youtube.com/watch?v=Pjw4Eq29hYM
+    - direct access rather than forcing sequential
+
+- memorizing guides (page 77)
+
+- conceptual model: strong visual indicators maybe? like graphs
+- mapping: actions and outcomes obvious
+- maybe a search popup thing so that you get feedforward that you need to do something now rather than it just passively sitting on the side
+
+# 3-31-2025
+give everyone quity?
+
+ronith:
+- all roles abolished
+- mufaddal was timid when he joined initially, pushed the agenda that there are no roles and everyone is equal, then he started leading and he started becoming more autnomous
+
+- gave him time to learn and be prepared
+- gave him a choice
+- everyone has an equal opportunity
+
+mufaddal:
+- great, no worries about him
+
+evan:
+- hasn't been properly introduced to the team (3)
+- grind calls for evan
+    - more grind calls for the next 2-3 weeks
+- still sees a hierarchy (2)
+- if you tell him he's a bit more aware of it
+- lacks confidence in his skills
+
+- dashboard
+    - he implemented the right or wrong
+    - "can i just make sure i did this correctly"
+        - making ronith decide if he does something
+        - "why do I get to decide that?"
+        - "is this your best work?" TODO: won't work
+            - PUSH TO MAIN
+        - if he did find a valid flaw and fix it, also ask why ronith gets to decide that
+            - "are you satisfied"
+
+evan & mufaddal ultimate duo
+
+don't give him task - explain to ronith
+
+sid
+- maybe slight feeling of hierarchy
+- comfortable with om but hasn't actively put out ideas for mufaddal
+- he has autonomy, knows what to do but doesn't act upon it until afterwards
+
+- be more communicative, didn't respond for days 
+- don't need to feel like he's the boss
+- said that he wanted to do this before
+- is it necessary for us to "check-in"
+
+sid & dhanya similar in a way
+- transparency issue
+- pretty busy
+- zero guidance thing so lost, not able to learn but stuck but unwilling to ask for help because she would look stupid
+
+# 4-1-2025
+- user rating
+- g is slightly cut off
+- Sign Up Free
+
+- 1600 should link to the page then by the repcricoty principle the thing should force you to sign up
+- discord server has benefits
+- should ahve two separate pages and for the list make it so they can see their selected options on top or on the right
+
+- push to production
+
+https://www.nngroup.com/videos/destination-pages-vs-transition-pages/?lm=login-walls&pt=article
