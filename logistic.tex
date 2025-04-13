@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esvect}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage[normalem]{ulem}
+
+\geometry{letterpaper, portrait, margin=0.5in}
+\pagestyle{fancy}
+
+\fancyhf{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\copyright\;aquarc 2025. \href{https://aquarc.org}{\underline{aquarc.org}}} % other info in "inner" position of footer line
+
+\definecolor{myred1}{RGB}{255, 0, 0}
+\definecolor{myyellow1}{RGB}{255, 255, 219}
+\definecolor{mygreen1}{RGB}{0, 255, 0}
+\definecolor{mygreen2}{RGB}{0, 126, 0}
+\definecolor{myblue1}{RGB}{0, 0, 255}
+
+\begin{document}
+
+\fontsize{14}{16}\selectfont
+
+% center the title
+\begin{center}
+    \textbf{\underline{Logistic Function}}
+\end{center}
+
+
+A Logistic function is modeled by the following derivative:
+
+\begin{align*}
+    \frac{dP}{dt}=kP(1-\frac{P}{m})
+\end{align*}
+
+$k$ represents the maximum rate of growth as a percentage. Therefore, $kP$ will represent the absolute growth rate. \\
+
+$m$ represents the maximum population size. Therefore, $\frac{P}{m}$ will approach 1 and the derivative will approach 0 as we approach carrying capacity.
+
+
+
+\end{document}

@@ -1275,3 +1275,31 @@ sid & dhanya similar in a way
 - push to production
 
 https://www.nngroup.com/videos/destination-pages-vs-transition-pages/?lm=login-walls&pt=article
+
+# 4-8-2025
+bruh we needs usability tests: clear hierarchy
+don't need 2 stress about hierarchy tbh because very simple
+BUT people prolly don't understand the pages specifically like wtf is "make a free account" lol
+and the home page doesn't say SH!T
+
+yesterday:
+- class was good, we moved fast but
+- lot of peple just need practice w inferences (i suspect no vocab questions)
+- practice,got thru all questions in time
+
+today
+- didn't know factoring
+- moved fast neverthelesse
+- quadratic hard
+
+# 4-9-2025
+- semicolons period interchangable post
+- subject verb agreement: prepositional phrases, dangling modifiers post
+
+# 4-12-2025
+
+- the prompt rater thing did not work wellw ith existing vocabulary had to adapt
+- low temperature to be determinisitc, preserve context
+- perhaps remove the preserved context?
+
+- debate prompt is the best by a HUGE margin. now time to save the information in logs

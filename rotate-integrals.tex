@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{esvect}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage[normalem]{ulem}
+
+\geometry{letterpaper, portrait, margin=0.5in}
+\pagestyle{fancy}
+
+\fancyhf{} % clear all header fields
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[LE,RO]{\thepage}           % page number in "outer" position of footer line
+\fancyfoot[RE,LO]{\copyright\;aquarc 2025. \href{https://aquarc.org}{\underline{aquarc.org}}} % other info in "inner" position of footer line
+
+\definecolor{myred1}{RGB}{255, 0, 0}
+\definecolor{myyellow1}{RGB}{255, 255, 219}
+\definecolor{mygreen1}{RGB}{0, 255, 0}
+\definecolor{mygreen2}{RGB}{0, 126, 0}
+\definecolor{myblue1}{RGB}{0, 0, 255}
+
+\begin{document}
+
+\fontsize{14}{16}\selectfont
+
+% center the title
+\begin{center}
+    \textbf{\underline{Rotate Integrals Cheatsheet}}
+\end{center}
+
+\section{Disk Method}
+
+When you have a function $f(x)$ you can rotate it around the x-axis like this:
+
+\begin{align*}
+    \pi\int_{a}^{b} (f(x))^2 dx
+\end{align*}
+
+Essentially, you are adding up many $\pi r^2$ Areas multiplied by width, or $dx$. So you're adding up a bunch of tiny volumes.
+
+\section{Washer Method}
+
+Subtract two Volumes to rotate it around the x-axis.
+
+\begin{tikzpicture}[domain=0:4]
+    \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
+    \draw plot (\x,0.25*\x^2) node[right] {$f(x) =-\frac{1}{4}x^2$ + 2};
+    \draw plot (\x,1) node[right] {$g(x)=1$}
+\end{tikzpicture}
+
+\section{Cross-Sections}
+
+\subsection{Triangle Cross Section}
+
+\end{document}
