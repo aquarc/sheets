@@ -1303,3 +1303,296 @@ today
 - perhaps remove the preserved context?
 
 - debate prompt is the best by a HUGE margin. now time to save the information in logs
+
+# 4-17-2025
+
+class StripFiguresConverter(MarkdownConverter):
+    """
+    Create a custom MarkdownConverter that ignores paragraphs
+    """
+    def convert_figure(self, el, text, parent_tags):
+        return ''
+
+def md(html, **options):
+    return StripFiguresConverter(**options).convert(html)
+
+all of that lowk didn't work
+
+## ReAct Demo
+On a production deployment, the questions will be called by their IDs and presented to the user using the already existing UI to minimize confusion. Thus, the agent only needs to call a function in its output.
+
+It may not even be necessary to have an intermediate agent and may be helpful to pass the similar questions directly to the user. 
+
+hmm, or maybe perhaps i should just make one unified react structure that can call all these distinct tools at the end in addition to the button approach i
+
+or maybe it isn't necessary at all rn
+
+
+# 4-18-2025
+user rationale can sometimes be a question, gotta account for that or maybe it is just IDK
+then after that the chatbot becomes a normal chatbot 
+
+I don't think it is actually ToT
+
+# 4-19-2025
+check out ai.go!!
+and the frontend part on the live site lol
+
+chat
+
+my question similarityf inder is cooked
+
+it just ranked the question against itself 2nd
+
+meaning that it is second most relevant to itself
+
+
+# 4-21-2025
+resummarizing is hella hlepful
+the 3 attempts thing is still usefl even if u get the first one right
+
+implied --> contrast so it implies which one is more effective
+
+how find implication in brain for something? correct negatives?
+explain with buttons?
+
+# 4-23-2025
+em dash
+dangling modifier
+what are independent clauses
+
+The positive number E is 480% of the number D,
+and E is 70% of the number )
+
+intertwine more and US to make it mmore confusing lol
+
+# 4-27-2025
+- [x] ap tests
+    - log downloads 
+    - change meta tag
+- adaptive questions "just open and grind ggs"
+    - 3 attempts thing afterwards
+        - first question right for the wrong reasons, shows thru multiple questions
+    - gamification
+- each question is TAGGED with a help article
+    - companion youtube video
+- sat roots helper thing anki
+- competitions
+
+Start scoring higher in 2 clicks.
+
+Practice Sat QUEtion s ->
+
+Target your weak points
+Grind any specific skill from 27 categories. 
+
+[insert sm on analytics?]
+
+Understand what went wrong
+Contrast your thinking process leading to the incorrect answer with the correct answer and pinpoint your error.
+
+...really well
+There are many ways to get to your answer and the correct answer. Learn them all!
+
+Grind it out
+Practice similar questions to the one you got wrong using the AI-powered question finder.
+
+[insert mission statement]
+
+# 4-28-2025
+- essential vs non essential clauses
+- the narrator thing
+- FANBOYS
+
+# 4-29-2025
+- on sign up u can't escape the sat page
+
+# 5-1-2025
+important transitions
+- gerund phrases
+- subject object verb PRACTICE for identifying
+ 
+Essential vs Non Essential:
+- If removing the phrase makes the noun too general or ambiguous, the clause is essential and should not be set off with commas/parentheses.
+- Example of Non-Essential:
+"My brother, who takes passport photos, will ask you..."
+→ Here, "who takes passport photos" is extra info (we already know it’s "my brother").
+
+
+- discriminant is VERY useful
+- (n-2)* 180 ? sum of interior angles
+
+# 5-3-2025
+- landing page focus on poverty and education alleviation for poverty
+
+# 5-10-2025
+- splits graph time funny data for later? i think the bigger problem is understanding self paced learning
+
+# 5-13-2025
+- "get the score that will make ur parents proud"
+
+# 5-14-2025
+- automatic shuffle of categories (rotate them)
+
+what exactly does our "character" want? 
+- approval from parents? lot of kids have to take the SAT, my parents pressure to score high, everyone does, i even ran into a sophomore who's parents told the kid to take the SAT "for fun" without studying and they got a low score and i'm not rly sure why
+- probably to get into a good college. SAT prep is nothing but a stepping stone to get them to their higher goal, go to a good college get rich in finance or some other goofy thing
+- so as the hero of their story, they see this as a part of the conquest to victory. like, i see this as a side quest but the average person does realize that the SAT is a big deal and they know why. 
+- some people think it is important, i don't think anyone doesn't think it is important but some people are genuinely just lazy and uninterested if it doesn't help their application but that is their story, a stepping stone on the way to success.
+- actually, i should figure out: how important do people think the SAT is?
+
+- national average what people suck at not too many details
+
+- people i interviweed just had to do more and more questions
+- no feeling of completion no criteria
+- no artificial reward at the end
+- you want a STREAKKK
+
+- devi during lunch and one other kid the day afterwards
+
+- "stay motivated studying for the SAT"
+
+# 5-15-2025
+- the greater need for college applications to make money be successful, i think for more people in my demographic that is a matter of status and freedom as well as being able to meet basic material needs. in MY area, that's not something people worry about, and if you're taking the SAT anyway that's probably not the first thing on your mind
+
+## villains
+- collegeboard is a good one, people dont like it
+- external problem is scoring high on the test 
+- philosophical problem: everyone who wants to score high should be able to without paying!!!
+- internal problem: i wanna do other things, not the SAT (?) anny likes to do stocks and stuff so minimal time spent on this problem hopefully
+
+- overwhelm from not having a clear study plan
+- frustration of not improving despite studying
+- generic sat prep is the villain
+
+# 5-16-2025
+internal issue
+- "Guilt and anxiety over wasting time on SAT prep when you could be pursuing your passions."
+philosophical issue
+- "Your time and potential are too valuable to waste on outdated, impersonal systems."
+
+empathy
+- you shoulnd't feel stressed during SAT prep. 
+- we know you feel unmotivated to keep studying (better?)
+- we'll keep you not sacrifice passions and keep studying for the sat
+
+competency
+- user count 
+- testimonials (what specifically)
+
+# 5-17-2025
+https://github.com/nayafia/microgrants?tab=readme-ov-file
+
+# 5-19-2025
+competency
+- ai x education award on landing page
+- testimonial 
+- we understand your frustration in staying motivated
+- click practice sat questions, choose some questions, choose your difficulty, start practicing!
+- sign up now, start practicing now (it takes 1 click for us right now)
+- sense of urgency how idk
+- school house world!!
+
+# 5-20-2025
+what the stakes are:
+- demotivated, procrastination and then all time wasted 
+- parents sad cuz bad score
+- limits the college u can go to (because SAT is used as indicator of success)
+
+success:
+- high sat score?
+- parents proud, one less thing to worry about in ur college apps
+
+transformation:
+- sweaty, grindy demotivated monkey
+- person who has fun while studying, locked in, studies and is one step closer to reaching their dream
+
+# 5-21-2025
+transformation:
+- confident, enjoys life, locked in
+
+"we know it's hard to keep grinding questions. now, it's fun and efficient too."
+
+controlling ideas:
+- "Sit back and enjoy the process"
+- "Stop grinding. Start gaming. Your dream score is 1 click away."
+- "Studying has never been so fun."
+
+# 5-22-2025
+- give email so that they can get free 1 on 1 tutoring (with aquarc ofc)
+
+character
+- people see success as having lots of money so they can do weird things whenever they want (in my area) so investment banking in order to have cave diving as a hobby later
+- the SAT is an indicator of success
+- people also focus on parents
+
+# 5-24-2025
+- check breaths 
+- check MRI
+
+# 5-25-2025
+- can only use the sets thing if logged in
+- 17 minute timer
+
+# 5-31-2025
+- sunday meeting maybe
+- google slides new SAT UI
+- videos
+
+emailed this to everyone:
+Hi,
+
+Thank you for supporting aquarc by signing up! As a thank you to select
+users, we're giving away an exclusive 1 on 1 SAT tutoring session right
+before the June/August SAT. 
+
+You can also use this time to give us any feedback you might have so we
+can make the site as useful to you as possible.
+
+Are you interested?
+
+Best,
+Om
+
+# 6-1-2025
+- (not needed) aquarc logo on sidebar page
+
+- [x] oneprep multi select thing test
+- [x] test the new UI
+
+- GAUTH DONT WORK 
+- [x] sign out button (on landing page)
+- questi;on select no scorll
+
+# 6-3-2025
+- one of the questions none of the options werk monkey
+
+# 6-4-2025
+- dark mdoe (varun r smth the senior)
+
+# 6-5-2025
+- check which questions u got wrong (ayaan?)
+
+# 6-6-2025
+- horizontal scroll
+
+# 6-9-2025
+- SAT page redesign?
+
+ronith:
+- gauth
+- question id problem
+- landing page for sets?
+
+om:
+- [x] 2 columns for SAT page
+- [x] aquarc logo on top left
+- [x] scroll thing
+- ayaan thing questions right wrong indian
+    - when u press check it can also add to teh list of praciced_questions
+    - it be red or green, send from server in the same JSON payload
+- dark mode (varun?)
+    - :checked property
+
+# 6-10-2025
+- streaks (?)
